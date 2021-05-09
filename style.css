@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+}
+
+.wrapper {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .heading-main {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47.7px;
+  margin-top: 40px;
+}
+
+.sub-heading {
+  margin-top: 38px;
+}
+
+.sub-heading h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.sub-heading p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 10px;
+}
+
+.main {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 25px;
+}
+
+.main img {
+  width: 88%;
+ 
+}
+
+.footer {
+  text-align: center;
+}
+
+.profile-card {
+  position: relative;
+}
+
+.profile-card .designation {
+  writing-mode: vertical-lr;
+  position: absolute;
+  right: 0;
+  font-family: "PT Serif", serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.profile-card .name {
+  font: 600 14px/21px "Poppins", serif;
+}
+
+.profile-card:nth-child(even) {
+  padding-top: 75px;
+}
+
+.footer {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 130px;
+  text-align: center;
+  color: #bdbdbd;
+}
+
+.footer .creator-name {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+  .main{
+    margin-top: 96px;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sub-heading{
+    margin-left: 200px;
+  }
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .profile-card:nth-child(even){
+    padding-top: 0;
+  }
+
+  .profile-card:nth-child(3n + 2) {
+    padding-top: 100px;
+  }
+
+  .main img {
+    width: 88%;
+   
+  }
+  .profile-card .designation{
+    font-size: 12px;
+    line-height: 15.9px;
+  }
+
+  .sub-heading p {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  .profile-card .name{
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
